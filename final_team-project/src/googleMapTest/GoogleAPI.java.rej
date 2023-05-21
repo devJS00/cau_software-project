@@ -1,0 +1,9 @@
+diff a/GoogleAPI.java b/GoogleAPI.java	(rejected hunks)
+@@ -28,6 +28,7 @@
+ 					+"&zoom=14&size=400x400&scale=2&key=AIzaSyB_JxWMXg7X8i2mRrfnM-Mpv1aN4_YFlnE";
+ 			URL url = new URL(imageURL);
+ 			
++			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+ 			connection.setRequestMethod("GET");
+ 			connection.setRequestProperty("Content-type", "application/json");
+ 			connection.setDoOutput(true);
